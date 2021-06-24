@@ -13,7 +13,5 @@
 ### Estado
 - Falta a implementação do botão de favoritos!
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
 
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
