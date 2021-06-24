@@ -22,14 +22,14 @@ class MovieCell: UITableViewCell {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-	func setupView() {
+	private func setupView() {
 		safeArea = layoutMarginsGuide
 		setupImageView()
 		setupMovieTitle()
 		setupMovieOverview()
 	}
 	
-	func setupImageView() {
+	private func setupImageView() {
 		addSubview(movieImage)
 		movieImage.translatesAutoresizingMaskIntoConstraints = false
 		movieImage.contentMode = .scaleAspectFit
@@ -44,7 +44,7 @@ class MovieCell: UITableViewCell {
 		])
 	}
 	
-	func setupMovieTitle() {
+	private func setupMovieTitle() {
 		addSubview(movieTitle)
 		movieTitle.translatesAutoresizingMaskIntoConstraints = false
 		movieTitle.font = UIFont.boldSystemFont(ofSize: 18)
@@ -57,7 +57,7 @@ class MovieCell: UITableViewCell {
 		])
 	}
 	
-	func setupMovieOverview() {
+	private func setupMovieOverview() {
 		addSubview(movieOverView)
 		movieOverView.translatesAutoresizingMaskIntoConstraints = false
 		movieOverView.font = UIFont(name: "Verdana", size: 14)

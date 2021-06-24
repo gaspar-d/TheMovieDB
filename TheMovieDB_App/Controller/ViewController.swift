@@ -19,7 +19,9 @@ class ViewController: UIViewController {
 		view.backgroundColor = .white
 		setupNavigationBar()
 		setupTableView()
-		
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
 		let asyncFetch = {(fetchMovie: [Result]) in
 			DispatchQueue.main.async {
 				let movieDetailList = fetchMovie.map { movie in
@@ -34,12 +36,12 @@ class ViewController: UIViewController {
 	}
 	
 //MARK: -> Setup 
-	func setupNavigationBar() {
+	private func setupNavigationBar() {
 		title = "The Movie DB"
 		navigationController?.navigationBar.prefersLargeTitles = true
 	}
 	
-	func setupTableView() {
+	private func setupTableView() {
 		view.addSubview(tableView)
 		safeArea = view.layoutMarginsGuide
 		tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -80,10 +82,10 @@ extension ViewController: UITableViewDataSource {
 //MARK: -> UITableViewDelegate
 extension ViewController: UITableViewDelegate {
 
-	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+	internal func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 		let favoriteAction = UIContextualAction(style: .normal, title: "Favoritos") { action, view, completionHandler in
 			// Terminar de implementar esses favoritos
-			//  salvar dados com userDefaults e setar um estado para o swipe com liked ? true : false 
+			//  salvar dados com userDefaults e setar um estado para o swipe com liked ? true : false
 			
 			completionHandler(true)
 		}
@@ -92,7 +94,8 @@ extension ViewController: UITableViewDelegate {
 		return UISwipeActionsConfiguration(actions: [favoriteAction])
 	}
 	
-	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	//MARK: -> Faz ir para a tela de detalhes
+	internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let movie = self.moviesList[indexPath.row]
 		let movieDetailVC = MovieDetailVC()
 		movieDetailVC.movie = movie

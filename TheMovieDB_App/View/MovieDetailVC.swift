@@ -22,7 +22,7 @@ class MovieDetailVC: UIViewController {
 		setupView()
 	}
 	
-	func setupView() {
+	private func setupView() {
 		safeArea = view.layoutMarginsGuide
 		setupMovieScene()
 		setupMovieTitle()
@@ -30,14 +30,14 @@ class MovieDetailVC: UIViewController {
 		setupDataDetails()
 	}
 	
-	func setupDataDetails() {
+	private func setupDataDetails() {
 		guard let movie = movie else {return}
 		movieTitle.text = movie.title
 		movieOverView.text = movie.overview
 		Nuke.loadImage(with: APICaller.shared.api.baseImageURL + movie.backdropPath, into: movieScene)
 	}
 	
-	func setupMovieScene() {
+	private func setupMovieScene() {
 		view.addSubview(movieScene)
 		movieScene.translatesAutoresizingMaskIntoConstraints = false
 		movieScene.contentMode = .scaleAspectFill
@@ -51,7 +51,7 @@ class MovieDetailVC: UIViewController {
 		])
 	}
 	
-	func setupMovieTitle() {
+	private func setupMovieTitle() {
 		view.addSubview(movieTitle)
 		movieTitle.translatesAutoresizingMaskIntoConstraints = false
 		movieTitle.font = UIFont.boldSystemFont(ofSize: 42)
@@ -67,7 +67,7 @@ class MovieDetailVC: UIViewController {
 		])
 	}
 	
-	func setupMovieOverview() {
+	private func setupMovieOverview() {
 		view.addSubview(movieOverView)
 		movieOverView.translatesAutoresizingMaskIntoConstraints = false
 		movieOverView.font = UIFont(name: "Verdana", size: 16)
