@@ -15,5 +15,3 @@
 
 ![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
 
-<img src="https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif" width="200" height="400" />
-
