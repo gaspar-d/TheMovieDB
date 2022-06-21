@@ -14,8 +14,12 @@
 - Falta a implementação do botão de favoritos!
 
 
-<p float="left" />
+
 ![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
 
 ![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
+
+<p float="left" />
+<img src="https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif" width="33%" />
+<img src="https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif" width="33%" />
 <p/>
