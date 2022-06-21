@@ -13,5 +13,9 @@
 ### Estado
 - Falta a implementação do botão de favoritos!
 
+
+<p float="left" />
 ![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
 
+![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
+<p/>
