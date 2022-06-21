@@ -19,7 +19,7 @@
 
 ![Alt Text](https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif)
 
-<p float="left" />
+<p float="left" align="center" />
 <img src="https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif" width="33%" />
 <img src="https://github.com/gaspar-d/TheMovieDB/blob/main/TheMovieDB_App/Resources/TheMovieDB.gif" width="33%" />
 <p/>
